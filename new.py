@@ -33,3 +33,12 @@ print(f.readlines())
 def commonCharacterCount(s1, s2):
     com = [min(s1.count(i),s2.count(i)) for i in set(s1)]
     return sum(com)
+
+a1="abca"
+a2="xyzbac"
+print("a1=",a1)
+print("a2=",a2)
+print(a1.count(a2))
+print(a2.count(a1))
+print(set(a1))
+print(set(a2))
