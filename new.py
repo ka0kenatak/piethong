@@ -18,9 +18,12 @@ array3=[3,4,5]
 a1="abcaa"
 a2="xyzbaca"
 
+#function calls
+test(s)
+
 #print statements
 print("f.read()=",f.read())
-#uncomment to re-read lines from text.txt
+#uncomment to re-read lines from text.txt otherwise next methods return 0
 #f.seek(0)
 print("f.read()=",f.read())
 print("f.readlines()=",f.readlines())
@@ -40,3 +43,9 @@ print("min(array3)=",min(array3))
 print("min(s)=",min(s))
 print("max(array3)=",max(array3))
 print("max(s)=",max(s))
+
+for i in set(a1):
+	a=min(a1.count(i),a2.count(i))
+	print("\na1.count(",i,")=",a1.count(i))
+	print("a2.count(",i,")=",a2.count(i))
+	print("min =",a)
