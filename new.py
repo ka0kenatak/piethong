@@ -9,8 +9,19 @@ def commonCharacterCount(s1, s2):
     com = [min(s1.count(i),s2.count(i)) for i in set(s1)]
     return sum(com)
 
+def isLucky(n):
+	s = str(n)
+	pivot = len(s)//2
+	left, right = s[:pivot], s[pivot:]
+	print(s)
+	print(len(s))
+	print(pivot)
+	print(left,right)
+	return sum(map(int, left)) == sum(map(int, right))
+
 #declarations
 f=open('test.txt')
+num=123411
 s=[[1,2,3],[4,5,6]]
 array=[1]*4
 array2=[]
@@ -20,6 +31,7 @@ a2="xyzbaca"
 
 #function calls
 test(s)
+print(isLucky(num))
 
 #print statements
 print("f.read()=",f.read())
