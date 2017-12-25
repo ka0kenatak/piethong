@@ -39,8 +39,6 @@ def sortByHeight(a):
 	print(newList)
 	#return(trees)
 
-def reverseParentheses(s):
-
 #declarations
 f=open('test.txt')
 num=123411
