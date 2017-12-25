@@ -28,6 +28,8 @@ array2=[]
 array3=[3,4,5]
 a1="abcaa"
 a2="xyzbaca"
+slist=[-1, 150, 190, 170, -1, -1, 160, 180]
+
 
 #function calls
 test(s)
@@ -61,3 +63,8 @@ for i in set(a1):
 	print("\na1.count(",i,")=",a1.count(i))
 	print("a2.count(",i,")=",a2.count(i))
 	print("min =",a)
+
+print("slist=",slist)
+for i in range (len(slist)):
+	print(slist[i])
+print(slist.index(150))
