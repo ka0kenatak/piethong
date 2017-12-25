@@ -19,6 +19,28 @@ def isLucky(n):
 	print(left,right)
 	return sum(map(int, left)) == sum(map(int, right))
 
+def sortByHeight(a):
+	#trees=[for i in range(len(a)) if a[i]==-1 trees.append(i)]
+	#trees=[i if a==-1 for i in a]
+	trees=[]
+	newList=[]
+	for i in range(len(a)):
+		if a[i]==-1:
+			trees.append(i)
+		else:
+			newList.append(a[i])
+	print(a)
+	print(trees)
+	print(newList)
+	newList.sort()
+	print(newList)
+	for n in trees:
+		newList.insert(n,-1)
+	print(newList)
+	#return(trees)
+
+def reverseParentheses(s):
+
 #declarations
 f=open('test.txt')
 num=123411
@@ -34,6 +56,8 @@ slist=[-1, 150, 190, 170, -1, -1, 160, 180]
 #function calls
 test(s)
 print(isLucky(num))
+sortByHeight(slist)
+
 
 #print statements
 print("f.read()=",f.read())
@@ -65,6 +89,4 @@ for i in set(a1):
 	print("min =",a)
 
 print("slist=",slist)
-for i in range (len(slist)):
-	print(slist[i])
-print(slist.index(150))
+print("the number 150 was found in list ",slist.index(150)," times")
