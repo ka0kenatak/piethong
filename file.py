@@ -9,16 +9,18 @@ def reverseParentheses(s):
     newString=oldString[::-1]
     print("newString =",newString)
 
-    print((s.replace(oldString,newString)))
-    print("s =",s)
+    returnString=s.replace(oldString,newString)
+    print("returnString =",returnString)
 
-    '''newList=[]
-    for n in newString:
+    newList=[]
+    for n in returnString:
         newList.append(n)
-    newList.reverse()'''
+    newList.remove('(')
+    newList.remove(')')
+    print(newList)
 
-    #print("newList =",newList)
-    #return(s.replace(oldString,newString))
+    z=''.join(newList)
+    print(z)
 
 
 #declarations
