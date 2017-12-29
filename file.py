@@ -24,10 +24,12 @@ def reverseParentheses(s):
 
 
 #declarations
-test="a(bc)de"
+test1="a(bc)de"
+test2="a(bcdefghijkl(mno)p)q"
 
 #funcation calls
-reverseParentheses(test)
+reverseParentheses(test1)
+reverseParentheses(test2)
 
 #print statements
 print("test string is",test)
