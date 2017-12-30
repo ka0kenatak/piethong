@@ -5,6 +5,8 @@ def reverseParentheses(s):
     else:
         return(s)
 
+    print("mas is ",max(s.index(')')))
+    
     print("a and b =",a,b)
     oldString=(s[a+1:b])
     print("oldString =",oldString)
