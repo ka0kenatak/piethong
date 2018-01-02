@@ -10,6 +10,7 @@ def XXreverseParentheses(s):
            p_index_stack.append(i)
        elif s[i] == ')':
            s = flip(s,p_index_stack.pop(),i)
+           print("s=",s)
            i -= 2
        i += 1
    return s
@@ -58,12 +59,17 @@ def reverseParentheses(s):
 test1="a(bc)de"
 test2="a(bcdefghijkl(mno)p)q"
 test3="Where are the parentheses?"
+test6="abc(cba)ab(bac)c"
+test7="The ((quick (brown) (fox) jumps over the lazy) dog)"
+
 
 #funcation calls
 #reverseParentheses(test1)
-reverseParentheses(test2)
+#reverseParentheses(test2)
 #reverseParentheses(test3)
-
+#XXreverseParentheses(test2)
+#XXreverseParentheses(test6)
+#XXreverseParentheses(test7)
 
 #print statements
 #print("test string is",test1)
