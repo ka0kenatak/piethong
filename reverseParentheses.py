@@ -1,7 +1,33 @@
 #functions definitions
+#Chris' solution
+def XXreverseParentheses(s):
+   def flip(seq, begin, end):
+       return seq[:begin]+seq[begin+1:end][::-1]+seq[end+1:]
+   p_index_stack = []
+   i = 0
+   while i < len(s):
+       if s[i] == '(':
+           p_index_stack.append(i)
+       elif s[i] == ')':
+           s = flip(s,p_index_stack.pop(),i)
+           i -= 2
+       i += 1
+   return s
+
+
 def reverseParentheses(s):
     if s.find('(') > 0:
-        a,b=s.index('('),s.index(')')
+        b=s.index(')')
+
+        tmpList=[]
+        a=0
+        for i in range(len(s)):
+            if s[i] == '(':
+                tmpList.append(i)
+                print(tmpList)
+        a=max(tmpList)
+
+
         print("a and b =",a,b)
         oldString=(s[a+1:b])
         print("oldString =",oldString)
@@ -13,16 +39,19 @@ def reverseParentheses(s):
         newList=[]
         for n in returnString:
             newList.append(n)
-        newList.remove('(')
-        newList.remove(')')
+        #newList.remove('(')
+        #newList.remove(')')
+        newList.pop(a)
+        newList.pop(b-1)
         print(newList)
 
         z=''.join(newList)
-        print(z)
+        print("z = ",z)
+        reverseParentheses(z)
     else:
         print(s)
 
-    print("mas is ",max(s.index(')')))
+    #print("mas is ",max(s.index(')')))
 
 
 #declarations
