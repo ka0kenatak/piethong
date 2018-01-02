@@ -1,0 +1,2 @@
+def alternatingSums(a):
+    
