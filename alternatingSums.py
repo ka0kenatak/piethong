@@ -1,10 +1,16 @@
 def alternatingSums(a):
-    i=0
     z=[0,0]
-    g1=[]
-    g2=[]
-    while(i <len(a)):
-
+    if(len(z) == 1):
+        #return(z[0]=(z[0]+a[0]))
+        print(z[0]=(z[0]+a[0]))
+    else:
+        while(len(z)!=2):
+            z[0]=(z[0]+a[0])
+            z[1]=z[1]+a[1]
+            a.pop(0)
+            a.pop(1)
+        #return(z)
+        print(z)
 
 
 
