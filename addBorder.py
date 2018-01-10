@@ -12,14 +12,11 @@ def addBorder(picture):
     for i in range(len(picture)):
         picture[i]=insertAsterisk(picture[i])
 
-    z=["*"*(len(picture[0]))]*(len(picture)+2)
-
-    for n in picture:
-    #z.insert(1,picture[0])
-        z.append(n)
+    #z=["*"*(len(picture[0]))]*(len(picture)+2)
+    picture.insert(0,"*"*(len(picture[0])))
+    picture.append("*"*(len(picture[0])))
 
     print("picture=",picture)
-    print("z = ",z)
 
 
 #declarations
