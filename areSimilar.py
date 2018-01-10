@@ -1,0 +1,2 @@
+def areSimilar(a, b):
+    
