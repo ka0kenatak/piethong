@@ -1,13 +1,13 @@
 def areSimilar(a, b):
-    a.sort()
-    b.sort()
-    print("a=",a,"b=",b)
-    if (a == b):
-        return(True)
-    else:
-        return(False)
 
+    def isEqual(x,y):
+        if(a==b):
+            return(True)
+        else:
+            return(False)
 
+    for i in range(len(a)-1):
+        if(isEqual(a[i],b[i])==False):
 
 #declarations
 test8a=[4, 6, 3]
