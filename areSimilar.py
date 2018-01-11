@@ -8,7 +8,7 @@ def areSimilar(a, b):
 
     for i in range(len(a)-1):
         if(isEqual(a[i],b[i])==False):
-
+            break
 #declarations
 test8a=[4, 6, 3]
 test8b=[3, 4, 6]
