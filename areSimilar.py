@@ -1,3 +1,12 @@
+'''def areSimilar(a, b):
+    a.sort()
+    b.sort()
+    print("a=",a,"b=",b)
+    if (a == b):
+        return(True)
+    else:
+        return(False)'''
+
 def areSimilar(a, b):
 
     def isEqual(x,y):
