@@ -7,7 +7,7 @@
     else:
         return(False)'''
 
-def areSimilar(a, b):
+'''def areSimilar(a, b):
     i=0
     j=0
     c=False
@@ -26,7 +26,20 @@ def areSimilar(a, b):
             else:
                 j+=1
                 b[i],b[i+1]=b[i+1],b[i]
-    print("c=",c)
+    print("c=",c)'''
+
+def areSimilar(a,b):
+    i=0
+    j=0
+    x=0
+    for i in range(a):
+        while(x<2):
+            while(j<len(b)):
+                if(a[i]==b[i]):
+                    stuff
+                else(a[i]!=b[i]):
+                    stuff
+
 
 #declarations
 mytest1=[1,2,3,4,5,6,7]
