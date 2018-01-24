@@ -29,16 +29,16 @@
     print("c=",c)'''
 
 def areSimilar(a,b):
-    i=0
     j=0
     x=0
-    for i in range(a):
+    def isNotEqual(c,d):
+
+
+
+    for i in range(len(a)):
         while(x<2):
-            while(j<len(b)):
-                if(a[i]==b[i]):
-                    stuff
-                else(a[i]!=b[i]):
-                    stuff
+            while(a[i]!=b[j]):
+                
 
 
 #declarations
