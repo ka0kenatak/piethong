@@ -7,43 +7,30 @@
     else:
         return(False)'''
 
-'''def areSimilar(a, b):
-    i=0
-    j=0
-    c=False
 
-    while(i<len(a)-1):
-        if(j>2):
-            c=False
-            print("c=",c)
-            return(c)
-        else:
-            print("a[",i,"]=",a[i])
-            print("b[",i,"]=",b[i])
-            if(a[i]==b[i]):
-                c=True
-                i+=1
-            else:
-                j+=1
-                b[i],b[i+1]=b[i+1],b[i]
-    print("c=",c)'''
+def areSimilar(a, b):
 
-def areSimilar(a,b):
-    j=0
-    x=0
-    def isNotEqual(c,d):
-
-
-
+    left = None
+    right = None
+    isSim=True
+    counter=0
     for i in range(len(a)):
-        x=0
-        j=0
-        while(x<2):
-            while(a[i]!=b[j]):
-                x+=1
-                j+=1
-            return(True)
-        return(False)
+        if a[i] != b[i]:
+            counter+=1
+        else:
+            continue
+        if counter==1:
+            left = a[i]
+            right = b[i]
+        elif counter==2:
+            if left == b[i] and right == a[i]:
+                continue
+            else:
+                return False
+        elif counter > 2:
+            isSim=False
+            break
+    return isSim
 
 
 #declarations
