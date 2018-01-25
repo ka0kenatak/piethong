@@ -47,6 +47,8 @@ def areSimilar(a,b):
 
 new lines in new branch
 
+more new lines in new branch
+
 #declarations
 mytest1=[1,2,3,4,5,6,7]
 mytest2=[1,3,2,5,4,6,7]
