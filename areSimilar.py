@@ -45,7 +45,6 @@ def areSimilar(a,b):
             return(True)
         return(False)
 
-crap crap crap
 
 
 #declarations
