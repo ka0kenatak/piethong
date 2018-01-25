@@ -36,9 +36,14 @@ def areSimilar(a,b):
 
 
     for i in range(len(a)):
+        x=0
+        j=0
         while(x<2):
             while(a[i]!=b[j]):
-                
+                x+=1
+                j+=1
+            return(True)
+        return(False)
 
 
 #declarations
