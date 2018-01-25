@@ -45,6 +45,8 @@ def areSimilar(a,b):
             return(True)
         return(False)
 
+crap crap crap
+
 
 #declarations
 mytest1=[1,2,3,4,5,6,7]
