@@ -1,11 +1,12 @@
-def arrayChange(?):
-    p, s = a[?], 0
-
-    for c ?? a[1:]:
-        if ? <= p:
-            s += p - ? + 1
-            c = p + ?
-
-        p = c
-
-    return ?    
+def arrayChange(inputArray):
+    #??????? x[i] to x[?+1].
+    #If x[i] < ?[i+1], pass.
+    #Else, ???? the difference x[i]+?-x[i+1].  Add ????
+    #difference to total and ???? set x[i+1] ?? x[i]+1
+    x, array = inputArray, 0
+    for i in range(len(x)-1):
+        a,b = x[i], x[i+1]
+        if a >= b:
+            array += a + 1 - b
+            x[i+1] = a + 1
+    return array
