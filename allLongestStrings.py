@@ -8,10 +8,10 @@ def allLongestStrings(inputArray):
             else:
                 pass
         return(biggestLength)
-    
+
     if(len(inputArray)==1):
         return(inputArray)
-    else: 
+    else:
         a=getLongestStringLength(inputArray)
         new_sequence=[]
         for i in range(len(inputArray)):
