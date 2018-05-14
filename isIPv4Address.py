@@ -7,14 +7,13 @@ def isIPv4Address(inputString):
         return(list)
 
     #unit tests
-    def unitTest1(input):
+    def verifyBlank(input):
         if not input:
             return False
         else:
             return True
 
 
-    a=[]
     a=convertArray(inputString)
     print(a)
     indices = [i for i, x in enumerate(inputString) if x == "."]
@@ -31,4 +30,4 @@ test3=""
 
 
 #function call
-isIPv4Address(test3)
+isIPv4Address(test1)
