@@ -1,12 +1,15 @@
 def isIPv4Address(inputString):
-    array=[inputString]
-    print(inputString[0])
-    print(array[0])
+
+    indices = [i for i, x in enumerate(inputString) if x == "."]
+
+    print(indices)
+
+
+
 
 
 #declarations
-test="172.16.254.1"
-
+test1="172.16.254.1"
 
 #function call
-isIPv4Address(test)
+isIPv4Address(test1)
