@@ -9,7 +9,7 @@ def isIPv4Address(inputString):
     #Unit Test - verify if input is only numerical
     def verifyAlpha(input):
         return(input.isdigit())
-        
+
     #Unit Test - verify input is valid octave
     def verifyLimit(input):
         x=int(input)
@@ -26,22 +26,25 @@ def isIPv4Address(inputString):
         return(list)
 
 
-    '''a=convertArray(inputString)
+    a=convertArray(inputString)
     print(a)
     indices = [i for i, x in enumerate(inputString) if x == "."]
-    print(indices)'''
+    print(indices)
 
-    print(verifyBlank(inputString))
-    print(verifyAlpha(inputString))
-    print(verifyLimit(inputString))
+    #print(verifyBlank(inputString))
+    #print(verifyAlpha(inputString))
+    #print(verifyLimit(inputString))
 
 
 #declarations
 test="172.16.254.1"
-test1=""
-test2="172.a.13.34"
-test3="300"
+test2=""
+test3="172.a.13.34"
+test4="300"
 
 
 #function call
-isIPv4Address(test3)
+isIPv4Address(test)
+isIPv4Address(tes2)
+isIPv4Address(tes3)
+isIPv4Address(tes4)
