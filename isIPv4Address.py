@@ -17,7 +17,6 @@ def isIPv4Address(inputString):
             return(True)
         else:
             return(False)
-'''changes'''
 
     def convertArray(input):
         list=[]
@@ -45,6 +44,6 @@ test4="300"
 
 #function call
 isIPv4Address(test)
-isIPv4Address(tes2)
-isIPv4Address(tes3)
-isIPv4Address(tes4)
+#isIPv4Address(tes2)
+#isIPv4Address(tes3)
+#isIPv4Address(tes4)
