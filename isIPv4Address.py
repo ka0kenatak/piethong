@@ -10,7 +10,10 @@ def isIPv4Address(inputString):
     def verifyAlpha(input):
         return(input.isdigit())
 
-    #Unit Test - verify input is valid octave
+    #split up the octets
+    def separateOctets(input):
+        return()
+    #Unit Test - verify input is valid octets
     def verifyLimit(input):
         x=int(input)
         if 0 <= x <= 255:
