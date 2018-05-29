@@ -34,8 +34,8 @@ def isIPv4Address(inputString):
         indices.append(len(a)-1)
         print(indices)
 
-        for i in range(len(indices)):
-            b=[a[i:i+1]]
+        for n in indices:
+            b=[a[n]]
             print(b)
         return()
 
@@ -55,6 +55,6 @@ test4="300"
 
 #Function calls
 isIPv4Address(test)
-#isIPv4Address(tes2)
-#isIPv4Address(tes3)
-#isIPv4Address(tes4)
+#isIPv4Address(test2)
+#isIPv4Address(test3)
+#isIPv4Address(test4)
