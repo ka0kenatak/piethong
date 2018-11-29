@@ -28,4 +28,8 @@ test5="304.124.306.305"
 
 
 #Function calls
-isIPv4Address(test3)
+isIPv4Address(test1) #True
+isIPv4Address(test2) #False
+isIPv4Address(test3) #False
+isIPv4Address(test4) #False
+isIPv4Address(test5) #False
