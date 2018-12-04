@@ -1,7 +1,11 @@
 def minesweeper(matrix):
-    print(matrix)
+    print("matrix input =", matrix)
     print("len(matrix) =", len(matrix))
-    print("len(matrix[0]) = ", len(matrix[0]))
+    for i in range(0,len(matrix)):
+        print("len(matrix[", i, "]) = ", len(matrix[i]))
+        print("matrix",i,matrix[i])
+        for j in range(0,len(matrix[i])):
+            print(matrix[i][j])
 
 
 #declarations
