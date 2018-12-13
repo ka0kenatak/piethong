@@ -1,9 +1,9 @@
 def arrayReplace(inputArray, elemToReplace, substitutionElem):
-
-    for i in range(len(inputArray)):
-        if inputArray[i] == elemToReplace:
-            inputArray.remove(elemToReplace)
-            inputArray.insert(i,substitutionElem)
+    if elemToReplace != substitutionElem:
+        for i in range(len(inputArray)):
+            if inputArray[i] == elemToReplace:
+                inputArray.remove(elemToReplace)
+                inputArray.insert(i,substitutionElem)
     return(inputArray)
 
 #Declarations
