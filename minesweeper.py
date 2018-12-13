@@ -1,19 +1,18 @@
 def minesweeper(matrix):
 
-    r=[]
-
-    print("matrix input =", matrix)
-    print("len(matrix) =", len(matrix))
-    for i in range(len(matrix)):
-        print("len(matrix[", i, "]) = ", len(matrix[i]))
-        print("matrix",i,matrix[i])
-        for j in range(len(matrix[i])):
-            print(matrix[i][j])
+    r = []
 
     for i in range(len(matrix)):
-        for j in range(len(matrix[i])):
-            for x in range(-1,0,1):
-                for y in range(-1,0,1):
+        r.append([])
+        for j in range(len(matrix[0])):
+            l = -matrix[i][j]
+            for x in [-1,0,1]:
+                for y in [-1,0,1]:
+                    if 0<=i+x<len(matrix) and 0<=j+y<len(matrix[0]):
+                        l += matrix[i+x][j+y]
+
+            r[i].append(l)
+    return r
 
 #declarations
 m1=[[True,False,False],[False,True,False],[False,False,False]]
