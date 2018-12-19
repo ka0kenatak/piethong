@@ -1,20 +1,17 @@
 def alphabeticShift(inputString):
 
+    newArray=[]
+    for val in inputString:
+        print("val is",val)
+        newArray.append((chr(ord(val)+1)))
+    newString=''.join(newArray)
+    print(newString)
 
-    #for val in inputString:
-    for i in range(len(inputString)):
-        print("val is",inputString[i])
-        #print("val is",val)
-        #print("ASCII is",ord(val)+1)
-        #print("new letter",chr(ord(val)+1))
-        #inputString=inputString.replace(val,chr(ord(val)+1),1)
-        inputString[i]='a'
-        print(inputString)
-
-    print(inputString)
+    newString2=newString.replace("{","a")
+    return(newString2)
 
 #Declarations
-str1="abcdef"
+str1="abcdefz"
 
 
 #Functional calls
