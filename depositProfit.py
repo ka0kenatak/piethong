@@ -2,7 +2,7 @@ def depositProfit(deposit, rate, threshold):
 
     balance=deposit
     count=0
-    while (threshold/balance >= 1):
+    while (balance < threshold):
         balance+=balance*(rate/100)
         count+=1
         print(balance)
