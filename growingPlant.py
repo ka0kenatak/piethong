@@ -1,12 +1,14 @@
 def growingPlant(upSpeed, downSpeed, desiredHeight):
 
     height=0
-    count=0
+    count=1
     delta=upSpeed-downSpeed
-    while(height < desiredHeight):
+    while(height+delta < desiredHeight):
+        height+=upSpeed
+        if(height >= desiredHeight):
+            return(count)
+        height-=downSpeed
         count+=1
-        height+=delta
-    print(count)
 
 #Declarations
 u1=100
