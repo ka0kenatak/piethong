@@ -1,19 +1,19 @@
 def longestDigitsPrefix(inputString):
 
     array=[]
-    if (inputString[0].isalpha==True or inputString[0]==" "):
-        newString=''.join(array)
-        print(newString)
-        return(newString)
+    newArray=[]
+
     for val in inputString:
-        print(type(val))
-        while(val.isdigit==True):
-            array.append(val)
-            print(array)
-    print(array)
+        array.append(val)
+    for i in array:
+        if i.isdigit()==True:
+            newArray.append(i)
+        if i.isdigit()==False:
+            newString=''.join(newArray)
+            return(newString)
 
 #Declarations
-s1="123aa1"
+s1="123aa7"
 
 #Function Calls
 longestDigitsPrefix(s1)
