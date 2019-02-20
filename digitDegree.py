@@ -14,19 +14,21 @@ def digitDegree(n):
     print("n=",n)
     print("newString=",newString)
     print("newArray=",newArray)
-    print("newNumber = ",newNumber)
+    print("newNumber=",newNumber)
 
-    if newNumber > 10:
+    if newNumber > 9:
         digitDegree(newNumber)
+    return(newNumber)
 
 
 #Declarations
 n1=100
 n2=91
 n3=10
-
+n4=911
 
 #Function Calls
 #digitDegree(n1)
-digitDegree(n2)
+#digitDegree(n2)
 #digitDegree(n3)
+#digitDegree(n4)
