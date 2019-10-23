@@ -1,15 +1,15 @@
 def isBeautifulString(inputString):
 
     count = 0
+    newArray=[]
     for i in inputString:
-        print(i)
-
-
+        newArray.append(i)
+    print(newArray.sort())
 
 #Declarations
 s1="abcedfg"
 s2="bbbaacdafe"
-s3=="aabbb"
+s3="aabbb"
 
 #Function calls
-isBeautifulString(s1)
+isBeautifulString(s2)
