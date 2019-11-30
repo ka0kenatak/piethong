@@ -1,12 +1,12 @@
-def isBeautifulString(inputString):
+def is_beautiful_string(inputString):
 
     count = 0
     newArray=[]
     newArray2=[]
     #instead of for loop for newArray, use this:
     newArray=[i for i in inputString]
-    #for i in inputString:
-    #    newArray.append(i)
+    '''for i in inputString:
+            newArray.append(i)'''
 
     print (newArray)
     newArray2=newArray.sort()
@@ -18,4 +18,4 @@ s2="bbbaacdafe"
 s3="aabbb"
 
 #Function calls
-isBeautifulString(s2)
+is_beautiful_string(s2)
