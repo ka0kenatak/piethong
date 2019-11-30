@@ -2,9 +2,15 @@ def isBeautifulString(inputString):
 
     count = 0
     newArray=[]
-    for i in inputString:
-        newArray.append(i)
-    print(newArray.sort())
+    newArray2=[]
+    #instead of for loop for newArray, use this:
+    newArray=[i for i in inputString]
+    #for i in inputString:
+    #    newArray.append(i)
+
+    print (newArray)
+    newArray2=newArray.sort()
+    print (newArray2)
 
 #Declarations
 s1="abcedfg"
