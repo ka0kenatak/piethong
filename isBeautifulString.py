@@ -1,16 +1,10 @@
 def is_beautiful_string(inputString):
 
-    count = 0
-    newArray=[]
-    newArray2=[]
-    #instead of for loop for newArray, use this:
-    newArray=[i for i in inputString]
-    '''for i in inputString:
-            newArray.append(i)'''
 
-    print (newArray)
-    newArray2=newArray.sort()
-    print (newArray2)
+    #newArray=[inputString.count(i) for i in string.ascii_lowercase]
+    #for i in inputString:
+    print(inputString.lower())
+
 
 #Declarations
 s1="abcedfg"
